@@ -1,0 +1,195 @@
+@media (max-width: 620px) {
+    .menu{
+        color: red;
+    }
+    .menu-text{
+        color: blue;
+    }
+    .menu-right h5{
+        color: var(--main-color);
+        font-size: 23px;
+     }
+    .menu-content{
+        color: green;
+    }
+    .row{
+        color: purple;
+        visibility: visible;
+    }
+    .row img{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+
+<section class="menu" id="menu">
+    <div class="main-text">
+     <h2>Most Popular Pizza</h2>
+     <p style="font-size: 25px;">We have selected for You <br> the most exquisite tastes around the world</p>
+    </div>
+    <div class="menu-content">
+     <div class="row">
+         <img src="Pizza Images/pizza 1.jpg" alt="">
+         <div class="menu-text">
+             <div class="menu-left">
+                 <h4>Margarita</h4>
+             </div>
+             <div class="menu-right">
+                 <h5>$23.00</h5>
+             </div>
+         </div>
+         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla, dolor?</p>
+         <div class="star">
+             <a href="#"><i class="fa fa-star"></i></a>
+             <a href="#"><i class="fa fa-star"></i></a>
+             <a href="#"><i class="fa fa-star"></i></a>
+             <a href="#"><i class="fa fa-star"></i></a>
+             <a href="#"><i class="fa fa-star"></i></a>
+         </div>
+     </div>
+
+     <div class="row">
+         <img src="Pizza Images/pizza 1.jpg" alt="">
+         <div class="menu-text">
+             <div class="menu-left">
+                 <h4>Montanara</h4>
+             </div>
+             <div class="menu-right">
+                 <h5>$19.30</h5>
+             </div>
+         </div>
+         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla, dolor?</p>
+         <div class="star">
+             <a href="#"><i class="fa fa-star"></i></a>
+             <a href="#"><i class="fa fa-star"></i></a>
+             <a href="#"><i class="fa fa-star"></i></a>
+             <a href="#"><i class="fa fa-star"></i></a>
+             <a href="#"><i class="fa fa-star"></i></a>
+         </div>
+     </div>
+
+     <div class="row">
+         <img src="Pizza Images/pizza 4.jpg" alt="">
+         <div class="menu-text">
+             <div class="menu-left">
+                 <h4>Co Carne</h4>
+             </div>
+             <div class="menu-right">
+                 <h5>$17.00</h5>
+             </div>
+         </div>
+         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla, dolor?</p>
+         <div class="star">
+             <a href="#"><i class="fa fa-star"></i></a>
+             <a href="#"><i class="fa fa-star"></i></a>
+             <a href="#"><i class="fa fa-star"></i></a>
+             <a href="#"><i class="fa fa-star"></i></a>
+             <a href="#"><i class="fa fa-star"></i></a>
+         </div>
+     </div>
+
+     <div class="row">
+         <img src="Pizza Images/pizza 4.jpg" alt="">
+         <div class="menu-text">
+             <div class="menu-left">
+                 <h4>Pepperoni</h4>
+             </div>
+             <div class="menu-right">
+                 <h5>$17.00</h5>
+             </div>
+         </div>
+         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla, dolor?</p>
+         <div class="star">
+             <a href="#"><i class="fa fa-star"></i></a>
+             <a href="#"><i class="fa fa-star"></i></a>
+             <a href="#"><i class="fa fa-star"></i></a>
+             <a href="#"><i class="fa fa-star"></i></a>
+             <a href="#"><i class="fa fa-star"></i></a>
+         </div>
+     </div>
+    </div>
+ </section>
+
+
+ .menu-content{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, auto));
+    gap: 2rem;
+    align-items: center;
+    margin-top: 4rem;
+    cursor: pointer;
+}
+
+.row img{
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+}
+.row{
+    transition: all .40s ease;
+}
+
+.menu-text{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 0;
+}
+.menu-left h4{
+    font-size: 23px;
+}
+.menu-right h5{
+   color: var(--main-color);
+   font-size: 23px;
+}
+.row p{
+    color: var(--second-color);
+    font-size: 15px;
+    line-height: 30px;
+    margin-bottom: 15px;
+}
+.star i{
+    color: var(--main-color);
+    font-size: 17px;
+    margin-right: 4px;
+}
+.row:hover{
+    transition: scale(1.02);
+}''
+
+
+<section class="contact" id="contact">
+    <div class="main-contact">
+        <div class="contact-content">
+            <h4>Services</h4>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#menu">Menu</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </div>
+
+        <div class="contact-content">
+            <h4>Delivery</h4>
+            <li><a href="#home">Ubber Eats</a></li>
+            <li><a href="#about">DoorDash</a></li>
+            <li><a href="#menu">ChowNow</a></li>
+            <li><a href="#contact">Toast TakeOut</a></li>
+        </div>
+        <div class="contact-content">
+            <h4>Contact</h4>
+            <li><a href="#home">Contact Us</a></li>
+            <li><a href="#about">Press Center</a></li>
+            <li><a href="#menu">Careers</a></li>
+            <li><a href="#contact">FAQ</a></li>
+        </div>
+        <div class="contact-content">
+            <h4>Follow Us</h4>
+            <li><a href="#home">TikTok</a></li>
+            <li><a href="#about">Twitter</a></li>
+            <li><a href="#menu">Facebbok</a></li>
+            <li><a href="#contact">Instagram</a></li>
+        </div>
+    </div>
+</section>
